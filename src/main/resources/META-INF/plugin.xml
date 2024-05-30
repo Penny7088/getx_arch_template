@@ -1,0 +1,33 @@
+<idea-plugin>
+    <id>org.getx_arch_template</id>
+    <name>GetX arch</name>
+    <version>1.0</version>
+    <description><![CDATA[
+    <h2>Used to generate the template code of GetX framework</h2>
+    <h3>With getx architecture used</h3>
+
+    ]]></description>
+
+    <depends>com.intellij.modules.all</depends>
+
+    <idea-version since-build="173"/>
+    <actions>
+        <!-- Add your actions here -->
+        <action id="org.getx_arch_template.action.NewGetXAction" class="action.NewGetXAction" text="GetX" description="Create getX template code"
+                icon="/image/getx_icon.png">
+            <add-to-group group-id="NewGroup" anchor="first"/>
+        </action>
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- application level-->
+        <applicationService serviceImplementation="helper.DataService"/>
+        <applicationConfigurable parentId="tools"
+                                 instance="setting.SettingsConfigurable"
+                                 id="SettingsConfigurable"
+                                 displayName="GetX Setting"/>
+    </extensions>
+
+
+
+</idea-plugin>
