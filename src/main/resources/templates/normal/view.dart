@@ -7,10 +7,13 @@ import 'state.dart';
 class @namePage extends CommonBaseView<@nameLogic> {
   @namePage({Key? key}) : super(key: key);
 
+  @override
+  @nameLogic get controller => Get.put(@nameLogic(),tag: controllerTag());
 
-@override
+  @override
   String controllerTag() {
-    return '@nameLogic';
+    controller.controllerTag ='@nameLogic()';
+    return controller.controllerTag!;
   }
 
   @override

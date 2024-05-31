@@ -127,7 +127,6 @@ class NewGetXAction : AnAction() {
         generateFile("state.dart", path, "$prefixName${data.module.stateName.lowercase(Locale.getDefault())}.dart")
         generateFile("controller.dart", path, "$prefixName${data.module.logicName.lowercase(Locale.getDefault())}.dart")
         generateFile("view.dart", path, "$prefixName${data.module.viewFileName.lowercase(Locale.getDefault())}.dart")
-        generateFile("binding.dart", path, "${prefixName}binding.dart")
     }
 
     private fun generateEasy(path: String, prefixName: String) {

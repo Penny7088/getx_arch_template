@@ -27,6 +27,6 @@ class @nameLogic extends CommonController<@nameState> {
   @override
   void onClose() {
     super.onClose();
-    Get.delete<@nameLogic>();
+    Get.delete<@nameLogic>(tag:controllerTag);
   }
 }
