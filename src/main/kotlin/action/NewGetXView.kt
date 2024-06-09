@@ -28,7 +28,7 @@ open class NewGetXView(private val getXListener: GetXListener) {
      */
     lateinit var folderBox: JCheckBox
 //    lateinit var prefixBox: JCheckBox
-    lateinit var pageViewBox: JCheckBox
+//    lateinit var pageViewBox: JCheckBox
 //    lateinit var bindingBox: JCheckBox
 
     /**
@@ -142,10 +142,10 @@ open class NewGetXView(private val getXListener: GetXListener) {
 //        main.add(prefixBox)
 
         //pageView
-        pageViewBox = JCheckBox(GetArchName.mainIsPageView, data.function.isPageView)
-        pageViewBox.addActionListener(actionChangeListener)
-        setBottomMargin(pageViewBox)
-        main.add(pageViewBox)
+//        pageViewBox = JCheckBox(GetArchName.mainIsPageView, data.function.isPageView)
+//        pageViewBox.addActionListener(actionChangeListener)
+//        setBottomMargin(pageViewBox)
+//        main.add(pageViewBox)
 
         //add binding
 //        bindingBox = JCheckBox(GetArchName.mainAddBinding, data.function.addBinding)
@@ -239,16 +239,16 @@ open class NewGetXView(private val getXListener: GetXListener) {
         setSpacing(container)
 
         /// deal listener
-        pageViewBox.addActionListener {
-            if (disposeBox.isSelected && pageViewBox.isSelected) {
-                disposeBox.isSelected = false
-            }
-        }
-        disposeBox.addActionListener {
-            if (disposeBox.isSelected && pageViewBox.isSelected) {
-                pageViewBox.isSelected = false
-            }
-        }
+//        pageViewBox.addActionListener {
+//            if (disposeBox.isSelected && pageViewBox.isSelected) {
+//                disposeBox.isSelected = false
+//            }
+//        }
+//        disposeBox.addActionListener {
+//            if (disposeBox.isSelected && pageViewBox.isSelected) {
+//                pageViewBox.isSelected = false
+//            }
+//        }
 
     }
 

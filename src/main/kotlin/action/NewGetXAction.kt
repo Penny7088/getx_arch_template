@@ -50,7 +50,7 @@ class NewGetXAction : AnAction() {
                 //function area
                 data.function.useFolder = view.folderBox.isSelected
 //                data.function.usePrefix = view.prefixBox.isSelected
-                data.function.isPageView = view.pageViewBox.isSelected
+//                data.function.isPageView = view.pageViewBox.isSelected
                 data.function.autoDispose = view.disposeBox.isSelected
                 data.function.addLifecycle = view.lifecycleBox.isSelected
 //                data.function.addBinding = view.bindingBox.isSelected
@@ -298,9 +298,9 @@ class NewGetXAction : AnAction() {
                 defaultFolder = "/templates/auto/"
             }
 
-            if (data.function.isPageView) {
-                defaultFolder = "/templates/pageView/"
-            }
+//            if (data.function.isPageView) {
+//                defaultFolder = "/templates/pageView/"
+//            }
         }
 
         //add lifecycle
