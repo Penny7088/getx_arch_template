@@ -50,4 +50,5 @@ lib/
 │   ├── view/
 │   └── state/
 ```
+![image](https://github.com/Penny7088/getx_arch_template/assets/14094130/8f953158-971d-4989-b372-537f652944b7)
 
