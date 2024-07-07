@@ -1,6 +1,3 @@
-当然，以下是一个中文版本的README模板：
-
----
 
 # GetX 架构模板生成插件
 
@@ -53,4 +50,5 @@ lib/
 │   ├── view/
 │   └── state/
 ```
+![image](https://github.com/Penny7088/getx_arch_template/assets/14094130/8f953158-971d-4989-b372-537f652944b7)
 
